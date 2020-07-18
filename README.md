@@ -3,6 +3,8 @@ Create COM persistence using Zoom and zero-width space directories.
 
 Will create a new `Zoom` directory in the user's `%APPDATA%` directory and create a new registry key for the `{62BE5D10-60EB-11d0-BD3B-00A0C911CE86}`. Whenever Zoom.exe is launched, the registry key will be read and your DLL will be loaded and executed by Zoom.
 
+You can read more about this here: https://fatrodzianko.com/2020/07/06/unprivileged-zoom-persistence-part-2-com-hijacking/
+
 ## Usage
 `ZoomCOMPersist.exe <base64 encoded DLL file>`
 
