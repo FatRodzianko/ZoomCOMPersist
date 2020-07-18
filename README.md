@@ -10,3 +10,7 @@ If you do not provide base64 encoded bytes of a DLL file, ZoomCOMPersist will cr
 
 Example:
 `ZoomCOMPersist.exe TVqQA...(snip)...AAAAAA=`
+
+Note: If you are running this from a cmd.exe prompt, your base64 encoded DLL will likely be too large to paste in. In a powershell.exe prompt I could paste in a 8kb base64 encoded file. I have not tested this with execute-assembly type functionality like in Cobalt Strike / Covenant so I do not know if it will work in that.
+
+If you are having issues with ZoomCOMPersist reading all of your base64 encoded bytes as an argument, just update the `b64Bytes = "TVqQA...(snip)...AAAAAA=";` line.
